@@ -7,7 +7,7 @@ import "./QRScanner.css";
 
 export default function QRScanner() {
   // const [selected, setSelected] = useState("environment");
-  const [data, setData] = useState("No");
+  const [data, setData] = useState("");
 
   const handleScan = (result) => {
     if (result && result) {
