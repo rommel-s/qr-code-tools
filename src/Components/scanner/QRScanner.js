@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { QrReader } from "react-qr-reader";
 
+import { BiQrScan } from "react-icons/bi";
+
 import "./QRScanner.css";
 
 export default function QRScanner() {
@@ -24,13 +26,6 @@ export default function QRScanner() {
     }
   };
 
-  const previewStyle = {
-    heigth: 100,
-    width: 100,
-    display: "flex",
-    "justify-content": "center",
-  };
-
   return (
     <div className="main-container">
       <section>
@@ -45,7 +40,9 @@ export default function QRScanner() {
           // containerStyle={previewStyle}
         />
       </section>
-      <a href={data}>{data}</a>
+      <a href={data} className="scan-btn">
+        <BiQrScan size={25} />
+      </a>
     </div>
   );
 }
