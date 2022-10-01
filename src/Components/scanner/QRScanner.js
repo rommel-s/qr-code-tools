@@ -3,7 +3,7 @@ import { QrReader } from "react-qr-reader";
 
 import "./QRScanner.css";
 
-export default function App() {
+export default function QRScanner() {
   // const [selected, setSelected] = useState("environment");
   const [data, setData] = useState("No");
 
@@ -39,7 +39,7 @@ export default function App() {
           onResult={handleScanning}
           onScan={handleScan}
           constraints={{ facingMode: "environment" }}
-          scanDelay={1000}
+          scanDelay={100}
           className={"scanner"}
           // style={previewStyle}
           // containerStyle={previewStyle}
