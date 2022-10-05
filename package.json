@@ -28,6 +28,7 @@
     "workbox-strategies": "^6.5.4",
     "workbox-streams": "^6.5.4"
   },
+  "homepage": "https://rommel-s.github.io/qr-code-tools",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
